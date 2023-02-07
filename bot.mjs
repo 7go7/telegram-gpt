@@ -16,6 +16,8 @@ async function query(data) {
 }
 });
 
+bot.on('text', msg => msg.reply.text("11111"))
+
 bot.on("text", async msg => {
   const response = await query({ inputs: msg.text });
   msg.reply.text(JSON.stringify(response.outputs));
