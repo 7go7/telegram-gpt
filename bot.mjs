@@ -14,7 +14,6 @@ async function query(data) {
 	const result = await response.json();
 	return result;
 }
-});
 
 bot.on('text', msg => msg.reply.text("11111"))
 
